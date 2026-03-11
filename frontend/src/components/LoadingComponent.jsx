@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const phrases = ["Brewing magic", "Fetching the goods", "Almost there", "Hang tight"];
+const phrases = ["Brewing magic", "Fetching your data", "Almost there", "Hang tight"];
 
 const LoadingComponent = () => {
   const [phraseIndex, setPhraseIndex] = useState(0);
