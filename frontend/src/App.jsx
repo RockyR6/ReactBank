@@ -10,6 +10,7 @@ import TransferMoney from './pages/TransferMoney'
 import { ToastContainer } from "react-toastify"
 import "react-toastify/dist/ReactToastify.css"
 import LogoutPage from './pages/LogoutPage'
+import LoadingComponent from './components/LoadingComponent'
 
 const App = () => {
   const dispatch = useDispatch()
@@ -20,7 +21,7 @@ const App = () => {
   }, [dispatch])
 
   if (loading) {
-    return <div>Loading...</div>
+    return <LoadingComponent />
   }
 
   return (
